@@ -1,7 +1,7 @@
 <?php
 if (! function_exists ( 'write_log' )) {
-	add_option ( "write_log_to" , "dev@shangrila.farm");
-	add_option ( "write_log_subject" , "[NSTLOG]");
+	add_option ( "write_log_to" , "me@domain.com");
+	add_option ( "write_log_subject" , "[SUBJECT]");
 	
 	function write_log($log, $send_mail = false, $level = "INFO") {
 		if (is_array ( $log ) || is_object ( $log )) {
