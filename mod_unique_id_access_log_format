@@ -1,0 +1,2 @@
+LogFormat "%h %l %u %t [-%{UNIQUE_ID}e] \"%r\" %>s %b \"%{Referer}i\" \"%{User-agent}i\"" slf-combined
+CustomLog ${APACHE_LOG_DIR}/nst-ssl_access.log slf-combined
